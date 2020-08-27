@@ -1,0 +1,13 @@
+{
+	"CompanyData": [{
+		"Pedido": "200",
+		"Cliento": "1000000",
+		"Nombre": "Cases javer SA de Cv",
+		"Dirreccion": "Calle assuccsion 100, Hacienda ",
+		"Material": "200N3000",
+		"Hora": "10:00:00 Am",
+		"Programado": "22.5 M3",
+		"Despachado": "22.5 M3"
+
+	} ]
+}

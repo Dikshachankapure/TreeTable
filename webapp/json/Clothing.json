@@ -1,0 +1,36 @@
+{
+  "catalog": {
+    "clothing": {
+      "categories": [
+        {"name": "200", "amount": 1000000, "Nombre": "Casas javer SA de Cv ", "Direccision": "calle assuccion 1000", "Material": "200N3000","Hora": "10:00:00 AM","Programmado": "10:00:00 AM","Descpachado": "22.5 M3", "categories": [
+          {"name":"Entrega", "amount": "Planta", "Nombre": "unidad ","Direccision": "Actividad","Material": "Producto","Hora": "Programadoa", "categories": [
+            
+              {"name": "1017", "amount": 101, "Nombre": "55"  },
+              {"name": "1018", "amount": 101, "Nombre": "101 " },
+              {"name": "1019", "amount": 101,  "Nombre": "55"}
+             ]}
+       
+        ]},
+        {"name": "201", "categories": [
+         
+         {"name":"Entrega", "categories": [
+            
+              {"name": "1017", "amount": 101, "Nombre": "55"  },
+              {"name": "1018", "amount": 101, "Nombre": "101 " },
+              {"name": "1019", "amount": 101,  "Nombre": "55"}
+             ]}
+        ]}
+          
+             
+             
+           
+        ]}
+
+    },
+  "sizes": [
+    {"key": "XS", "value": "Extra Small"},
+    {"key": "S", "value": "Small"},
+    {"key": "M", "value": "Medium"},
+    {"key": "L", "value": "Large"}
+  ]
+  }

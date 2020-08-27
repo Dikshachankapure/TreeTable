@@ -1,0 +1,168 @@
+<mvc:View controllerName="demo.ZTreeTable.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:tnt="sap.tnt" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:semantic="sap.m.semantic"
+	xmlns:layout="sap.ui.layout" xmlns:u="sap.ui.unified" xmlns:ui="sap.ui.table" xmlns:core="sap.ui.core" xmlns:dnd="sap.ui.core.dnd">
+	<Shell id="shell">
+		<App id="app">
+			<tnt:ToolPage id="toolPage">
+				<tnt:header>
+					<tnt:ToolHeader>
+						<Button id="sideNavigationToggleButton" text="Pedidos del 07 de mayo del 2018" type="Transparent" press="onSideNavButtonPress">
+							<layoutData>
+								<OverflowToolbarLayoutData priority="NeverOverflow"/>
+							</layoutData>
+						</Button>
+						<ToolbarSpacer width="20px"/>
+						<tnt:ToolHeaderUtilitySeparator/>
+						<ToolbarSpacer>
+							<layoutData>
+								<OverflowToolbarLayoutData priority="NeverOverflow" minWidth="20px"/>
+							</layoutData>
+						</ToolbarSpacer>
+					</tnt:ToolHeader>
+				</tnt:header>
+				<tnt:mainContents>
+					<NavContainer id="pageContainer" initialPage="page2">
+						<pages>
+							<ScrollContainer id="page2" horizontal="false" vertical="true" height="100%">
+								<IconTabBar id="idIconTabBarNoIcons" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+									<items>
+										<IconTabFilter text="Resumen">
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" id="tlTile" header="Billing Documents" press="press">
+												<TileContent unit="EUR" footer="Current Quarter">
+													<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false"/>
+												</TileContent>
+											</GenericTile>
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" id="tlTile1" header="Billing Documents" press="press">
+												<TileContent unit="EUR" footer="Current Quarter">
+													<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false"/>
+												</TileContent>
+											</GenericTile>
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" id="tlTile2" header="Billing Documents" press="press">
+												<TileContent unit="EUR" footer="Current Quarter">
+													<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false"/>
+												</TileContent>
+											</GenericTile>
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" id="tlTile3" header="Billing Documents" press="press">
+												<TileContent unit="EUR" footer="Current Quarter">
+													<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false"/>
+												</TileContent>
+											</GenericTile>
+										</IconTabFilter>
+										<IconTabFilter text="101 Planta Obispo">
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" id="tlTile21" header="Billing Documents" press="press">
+												<TileContent unit="EUR" footer="Current Quarter">
+													<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false"/>
+												</TileContent>
+											</GenericTile>
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" id="tlTile22" header="Billing Documents" press="press">
+												<TileContent unit="EUR" footer="Current Quarter">
+													<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false"/>
+												</TileContent>
+											</GenericTile>
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" id="tlTile23" header="Billing Documents" press="press">
+												<TileContent unit="EUR" footer="Current Quarter">
+													<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false"/>
+												</TileContent>
+											</GenericTile>
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" id="tlTile24" header="Billing Documents" press="press">
+												<TileContent unit="EUR" footer="Current Quarter">
+													<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false"/>
+												</TileContent>
+											</GenericTile>
+										</IconTabFilter>
+										<IconTabFilter text="102 Planta Mozuit">
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" id="tlTile31" header="Billing Documents" press="press">
+												<TileContent unit="EUR" footer="Current Quarter">
+													<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false"/>
+												</TileContent>
+											</GenericTile>
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" id="tlTile32" header="Billing Documents" press="press">
+												<TileContent unit="EUR" footer="Current Quarter">
+													<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false"/>
+												</TileContent>
+											</GenericTile>
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" id="tlTile33" header="Billing Documents" press="press">
+												<TileContent unit="EUR" footer="Current Quarter">
+													<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false"/>
+												</TileContent>
+											</GenericTile>
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" id="tlTile34" header="Billing Documents" press="press">
+												<TileContent unit="EUR" footer="Current Quarter">
+													<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false"/>
+												</TileContent>
+											</GenericTile>
+										</IconTabFilter>
+									</items>
+								</IconTabBar>
+								<Panel>
+									<IconTabBar id="idIconTabBarNoIconsNN" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+										<items>
+											<IconTabFilter text="Resumen">
+												<ui:TreeTable id="TreeTable" rows="{path:'/catalog/clothing', parameters: {arrayNames:['categories']}}" selectionMode="MultiToggle"
+													enableSelectAll="false" ariaLabelledBy="title">
+													<ui:columns>
+														<ui:Column width="13rem">
+															<Label text="padido"/>
+															<ui:template>
+																<Text text="{name}" wrapping="false"/>
+															</ui:template>
+														</ui:Column>
+														<ui:Column width="9rem">
+															<Label text="Clliente"/>
+															<ui:template>
+																<Text text="{amount}" wrapping="false"/>
+																<!--<u:Currency value="{amount}" currency="{currency}"/>-->
+															</ui:template>
+														</ui:Column>
+														<ui:Column>
+															<Label text="Nombre"/>
+															<ui:template>
+																<Text text="{Nombre}" wrapping="false"/>
+															</ui:template>
+														</ui:Column>
+														<ui:Column>
+															<Label text="Direccision"/>
+															<ui:template>
+																<Text text="{Direccision}" wrapping="false"/>
+															</ui:template>
+														</ui:Column>
+														<ui:Column>
+															<Label text="Material"/>
+															<ui:template>
+																<Text text="{Material}" wrapping="false"/>
+															</ui:template>
+														</ui:Column>
+														<ui:Column>
+															<Label text="Hora"/>
+														<ui:template>
+																<Text text="{Hora}" wrapping="false"/>
+															</ui:template>
+														</ui:Column>
+														<ui:Column>
+															<Label text="Programmado"/>
+															<ui:template>
+																<Text text="{Programmado}" wrapping="false"/>
+															</ui:template>
+														</ui:Column>
+														<ui:Column>
+															<Label text="Descpachado"/>
+															<ui:template>
+																<Text text="{Programmado}" wrapping="false"/>
+															</ui:template>
+														</ui:Column>
+														
+													</ui:columns>
+												</ui:TreeTable>
+											</IconTabFilter>
+											<IconTabFilter text="Resumen"></IconTabFilter>
+										</items>
+									</IconTabBar>
+								</Panel>
+							</ScrollContainer>
+						</pages>
+					</NavContainer>
+				</tnt:mainContents>
+			</tnt:ToolPage>
+		</App>
+	</Shell>
+</mvc:View>
